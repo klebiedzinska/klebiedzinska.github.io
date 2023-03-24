@@ -22,8 +22,8 @@
 						<div class="content">
 							<h1><em>Katarzyna Lebiedzińska</em></h1>
 							<p class="major">Recently graduated from <b>Lodz University of Technology</b> with <b>a Bachelor of Engineering degree </b>in <b>Database Engineering</b>.</p>
-							<p>I am eager to apply my skills and knowledge in <b>Data Science</b>, <b>Data Visualisation</b> and <b>Data Engineering</b>.</p>
-							<p>In my free time, I have a passion for <b>traditional drawing</b> and <b>photo editing in Photoshop</b>. I also enjoy <b>playing online video games</b> and <b>meeting people from all over the world</b>, which has helped me <b>develop and improve my English skills</b>.</p>
+							<p class="major">I'm eager to apply my skills and knowledge in <b>Data Science</b>, <b>Data Visualisation</b> and <b>Data Engineering</b>.</p>
+							<p class="major">In my free time, I have a passion for <b>traditional drawing</b> and <b>photo editing in Photoshop</b>. I also enjoy <b>playing online video games</b> and <b>meeting people from all over the world</b>, which has helped me <b>develop and improve my English skills</b>.</p>
 
 							<!-- <ul class="actions stacked">
 								<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
@@ -41,18 +41,35 @@
 				<!-- Two -->
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
 						<div class="content">
-							<h2>Magna etiam feugiat</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
+							<h2>Group recommender system supporting music selection</h2>
+							<p class="major">A system that provides personalised recommendation for a group of users.</p>
+							<p>The following technologies were used: <b>MongoDB</b>, <b>Spotify API</b>, <b>Python</b> (SciPy, NumPy, Pandas, Matplotlib, PyMongo, Flask)</p>
+							
+							<u><b>Data Preparation – the challenges:</b></u>
+							<ul>
+								<li><b><i>Representing users and tracks</b></i> – users and track were represented as data point in the same <b>7-dimensional space</b>.</li>
+								<li><b><i>Determining users’ music taste</b></i> – calculated from the <b>weighted average </b>of their most popular songs' features.</li>
+								<li><b><i>Grouping users by their music taste</b></i> – <b>K-means clustering</b> was used to group the users.</li>
+								<li><b><i>Getting the most representative users of each group</b></i> - <b>Euclidean distance</b> was used to designate a leader of each group - the closest user to the centroid.</li>
+								<!-- <li>- Storing the prepared data for a later use – the data was stored in <b>a NoSQL database – MongoDB</b>.</li> -->
+							</ul>
+							<u><b>Making Recommendations – the challenges:</b></u>
+							<ul>
+								<li><b><i>Comparing tracks with users’ taste</b></i> – <b>dot product</b> of tracks features and groups’ music taste was used</li>
+								<li><b><i>Determining the groups’ music taste</b></i> – calculated by adding the taste of all users in the group with their group leaders. The sum is then divided by two times the number of members in the group.</li>
+							</ul>
+							</p>
+							<h4>To see a more descriptive explanation, go to the GitHub repository and see the README.md file.</h4>
 							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
+								<li><a href="https://github.com/klebiedzinska/group_recommender_system" class="button">GitHub repository</a></li>
 							</ul>
 						</div>
 						<div class="image">
-							<img src="images/spotlight01.jpg" alt="" />
+							<img src="./images/music.jpg" alt="" />
 						</div>
 					</section>
-
-				<!-- Three -->
+<!-- 
+				
 					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
 						<div class="content">
 							<h2>Tempus adipiscing</h2>
@@ -61,12 +78,47 @@
 								<li><a href="#" class="button">Learn More</a></li>
 							</ul>
 						</div>
-						<div class="image">
-							<img src="images/spotlight02.jpg" alt="" />
+						<div class="gallery style2 medium lightbox onscroll-fade-in">
+							<article>
+								<a href="images/cat.jpg" class="image">
+									<img src="images/cat.jpg" alt="" />
+								</a>
+								<div class="caption">
+									<h3>kotek 1</h3>
+									<p>opis pierwszego kotka.</p>
+									<ul class="actions fixed">
+										<li><span class="button small">Details</span></li>
+									</ul>
+								</div>
+							</article>
+							<article>
+								<a href="images/cat2.jpg" class="image">
+									<img src="images/cat2.jpg" alt="" />
+								</a>
+								<div class="caption">
+									<h3>kotek 2</h3>
+									<p>opis drugiego kotka.</p>
+									<ul class="actions fixed">
+										<li><span class="button small">Details</span></li>
+									</ul>
+								</div>
+							</article>
+							<article>
+								<a href="images/cat3.jpg" class="image">
+									<img src="images/cat3.jpg" alt="" />
+								</a>
+								<div class="caption">
+									<h3>kotek 3</h3>
+									<p>opis trzeciego kotka.</p>
+									<ul class="actions fixed">
+										<li><span class="button small">Details</span></li>
+									</ul>
+								</div>
+							</article>
 						</div>
 					</section>
 
-				<!-- Four -->
+				
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
 						<div class="content">
 							<h2>Pharetra etiam nulla</h2>
@@ -80,14 +132,14 @@
 						</div>
 					</section>
 
-				<!-- Five -->
+				
 					<section class="wrapper style1 align-center">
 						<div class="inner">
 							<h2>Massa sed condimentum</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
 						</div>
 
-						<!-- Gallery -->
+						
 							<div class="gallery style2 medium lightbox onscroll-fade-in">
 								<article>
 									<a href="images/gallery/fulls/01.jpg" class="image">
@@ -237,7 +289,7 @@
 
 					</section>
 
-				<!-- Six -->
+				
 					<section class="wrapper style1 align-center">
 						<div class="inner">
 							<h2>Ipsum sed consequat</h2>
@@ -307,7 +359,7 @@
 						</div>
 					</section>
 
-				<!-- Seven -->
+				
 					<section class="wrapper style1 align-center">
 						<div class="inner medium">
 							<h2>Get in touch</h2>
@@ -334,18 +386,23 @@
 						</div>
 					</section>
 
+-->
 				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
+					<footer class="wrapper style1 align-left">
+						<!-- <div class="inner">
 							<ul class="icons">
+								
+								<li><a href="https://www.linkedin.com/in/k-lebiedzinska/" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="mailto:k.lebiedzinska@outlook.com" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+								
 								<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
 								<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
 								<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
 								<li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li> 
 							</ul>
 							<p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-						</div>
+						</div> -->
 					</footer>
 
 			</div>

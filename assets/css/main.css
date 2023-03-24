@@ -116,7 +116,7 @@ input, select, textarea {
 /* Type */
 
 	html {
-		font-size: 18pt;
+		font-size: 15pt;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -130,7 +130,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			html {
-				font-size: 12pt;
+				font-size: 13pt;
 			}
 
 		}
@@ -138,7 +138,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			html {
-				font-size: 11pt;
+				font-size: 12pt;
 			}
 
 		}
@@ -146,7 +146,7 @@ input, select, textarea {
 		@media screen and (max-width: 360px) {
 
 			html {
-				font-size: 10pt;
+				font-size: 11pt;
 			}
 
 		}
@@ -2637,6 +2637,7 @@ input, select, textarea {
 		.image img {
 			display: block;
 			border-radius: 4px;
+			object-fit: contain;
 		}
 
 		.image.left, .image.right {
@@ -4856,7 +4857,7 @@ input, select, textarea {
 		-ms-justify-content: -ms-flex-end;
 		justify-content: flex-end;
 		position: relative;
-		overflow-x: hidden;
+		overflow: hidden;
 		text-align: left;
 	}
 
@@ -5855,6 +5856,14 @@ input, select, textarea {
 
 /* Gallery (transitions) */
 
+	.gallery {
+		max-width: 35%;
+		}
+	@media screen and (max-width: 736px){
+		.gallery {
+		max-width: 100%;
+		}
+	}
 	.gallery.onload-fade-in article .image img {
 		-moz-transition: opacity 0.75s ease-in-out;
 		-webkit-transition: opacity 0.75s ease-in-out;
@@ -6695,6 +6704,7 @@ input, select, textarea {
 		-webkit-overflow-scrolling: touch;
 		position: relative;
 		background-color: transparent;
+		top: 1px;
 	}
 
 		.gallery.style2 input, .gallery.style2 select, .gallery.style2 textarea {
@@ -6870,6 +6880,7 @@ input, select, textarea {
 			overflow: hidden;
 			width: 22.5rem;
 			max-width: 75vw;
+			border-left: 1px solid rgb(0 0 0 / 8%);
 		}
 
 			.gallery.style2 article .image {
@@ -6882,6 +6893,7 @@ input, select, textarea {
 					display: block;
 					width: 100%;
 					border-radius: 0;
+					object-fit: contain;
 				}
 
 			.gallery.style2 article .caption {
@@ -7207,7 +7219,8 @@ input, select, textarea {
 	}
 
 	.gallery article .image {
-		background-color: rgba(0, 0, 0, 0.125);
+		background-color: white;
+		height: 100%;
 	}
 
 /* Wrapper (style1) */
