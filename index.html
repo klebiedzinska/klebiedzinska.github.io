@@ -21,9 +21,10 @@
 					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 							<h1><em>Katarzyna Lebiedzińska</em></h1>
-							<p class="major">Recently graduated from <b>Lodz University of Technology</b> with <b>a Bachelor of Engineering degree </b>in <b>Database Engineering</b>.</p>
-							<p class="major">I'm eager to apply my skills and knowledge in <b>Data Science</b>, <b>Data Visualisation</b> and <b>Data Engineering</b>.</p>
-							<p class="major">In my free time, I have a passion for <b>traditional drawing</b> and <b>photo editing in Photoshop</b>. I also enjoy <b>playing online video games</b> and <b>meeting people from all over the world</b>, which has helped me <b>develop and improve my English skills</b>.</p>
+							<p class="major">I've been a <b>Data Engineer</b> 2 years of experience.</p>
+							<p class="major">I hold <b>a Bachelor's degree </b>in <b>Database Engineering</b> from <b>Lodz University of Technology</b>.</p>
+							<p class="major">I'm passionate about appling my skills and knowledge in <b>Data Science</b>, <b>Data Visualisation</b> and <b>Data Engineering</b>.</p>
+							<p class="major">In my free time, I have a passion for <b>traditional drawing</b>, <b>knitting</b>, and <b>playing online video games</b> and <b>meeting people from all over the world</b>, which has helped me <b>develop and improve my English skills</b>.</p>
 
 							<!-- <ul class="actions stacked">
 								<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
@@ -68,6 +69,40 @@
 							<img src="./images/music.jpg" alt="" />
 						</div>
 					</section>
+
+
+				<!-- Three -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="second">
+						<div class="content">
+							<h2>Hot Wheels Value Prediction System (Work in Progress)</h2>
+							<p class="major">End-to-end project combining data engineering and data science for collectible cars.</p>
+							<p>This personal project focuses on building a system that <b>scrapes, processes, analyses</b>, and eventually <b>predicts future value</b> of diecast model cars (e.g. Hot Wheels 1/64 scale). It uses real-world data from <b>hobbyDB</b>, a crowdsourced collectible database.</p>
+							
+							<u><b>Work in progress – currently includes:</b></u>
+							<ul>
+								<li><b>Data collection</b> – using <b>Scrapy</b> spiders and public <b>API endpoints</b> to extract product metadata.</li>
+								<li><b>JSON processing</b> – nested field access with safe navigation (<code>.get()</code>, <code>next()</code>) to handle inconsistencies.</li>
+								<li><b>Feature extraction</b> – identifying key value drivers like <i>Rubber Tyres</i>, <i>Limited Editions</i>, <i>Color variants</i>, etc.</li>
+								<li><b>Value prediction (coming soon)</b> – regression models to estimate future value based on features and historical price trends.</li>
+								<li><b>Automation (planned)</b> – building a full <b>data pipeline</b> (using Airflow or Prefect) to regularly update the data.</li>
+								<li><b>Cloud deployment (planned)</b> – hosting the system on <b>AWS</b> for scalability and automation.</li>
+							</ul>
+							<u><b>Making Recommendations – the challenges:</b></u>
+							<ul>
+								<li><b><i>Comparing tracks with users’ taste</b></i> – <b>dot product</b> of tracks features and groups’ music taste was used</li>
+								<li><b><i>Determining the groups’ music taste</b></i> – calculated by adding the taste of all users in the group with their group leaders. The sum is then divided by two times the number of members in the group.</li>
+							</ul>
+							</p>
+							<p>This is an exploratory playground where I combine my skills in <b>Python, data pipelines, cloud, web scraping, and machine learning</b>.</p>
+
+							<h4>Project not yet public – code and predictions will be shared once a minimum viable version is complete.</h4>
+						</div>
+						<div class="image">
+							<img src="./images/hot_wheels.jpg" alt="" />
+						</div>
+					</section>
+
+
 <!-- 
 				
 					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
